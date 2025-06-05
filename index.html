@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generateur de mot de passe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Générateur de Mot de Passe</h1>
+
+        <div class="range-container">
+            <input type="range" id="lenght" min="4" max="20" value="8">
+            <span id="lenght-value">8</span>
+        </div>
+
+        <div class="options">
+            <label class="option">
+                <input type="checkbox" id="lowercase" checked>
+                <span>a-z</span>
+            </label>
+            <label class="option">
+                <input type="checkbox" id="uppercase">
+                <span>A-Z</span>
+            </label>
+            <label class="option">
+                <input type="checkbox" id="numbers">
+                <span>0-9</span>
+            </label>
+            <label class="option">
+                <input type="checkbox" id="symbols">
+                <span>!-?</span>
+            </label>
+        </div>
+
+        <button id="generate">Generer mot de passe</button>
+
+        <div class="result">
+            <input type="text" id="password" readonly>
+            <button id="copy">📋</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
